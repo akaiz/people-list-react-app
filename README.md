@@ -1,4 +1,4 @@
-### PIPEDRIVE-PEOPLE-LIST-APP
+### PEOPLE-LIST-REACT-APP
 
 #### About the project
 
