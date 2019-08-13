@@ -1,0 +1,187 @@
+body {
+  background: #ffffff;
+  font-family: 'Open Sans';
+  min-height: 100vh;
+  position: relative;
+  margin: 0;
+}
+$light-gray: #f1f0f070;
+$pagination-color: #08a742;
+$border-color: #dee2e6;
+$black-color: #262a2c;
+.container-fluid {
+  padding-top: 10px;
+}
+#page-content {
+  flex: 1 0 auto;
+}
+#footer {
+  flex-shrink: none;
+  background-color: #ebebeb;
+  height: 50px;
+  margin-top: 10px;
+}
+// User listing start
+.people-list {
+  padding: 1.5rem;
+}
+.people-list h3 {
+  font-weight: bold;
+}
+.form-control {
+  padding: 0px 20px 0px 20px;
+  margin-top: 10px;
+  color: #333;
+  font-size: 28px;
+  font-weight: 500;
+  border: 2px solid #b5bebb;
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  min-height: 60px;
+  height: auto;
+  border-radius: 50px;
+}
+.user-search .form-control {
+  padding-left: 1rem;
+  text-align: center;
+  border: 1px solid $border-color;
+  font-weight: 400;
+  @include media-breakpoint-up(xs) {
+    margin-bottom: 2em;
+  }
+  @include media-breakpoint-up(md) {
+    margin-bottom: 0em;
+  }
+}
+.user-search input:focus {
+  -webkit-box-shadow: none;
+  box-shadow: none;
+  border-color: #555;
+}
+.user-search ::placeholder {
+  font-weight: 100;
+  font-size: 20px;
+}
+.user-list-separator {
+  border: 0.6px solid #bebaba8f;
+  width: 100%;
+  margin-bottom: 1rem;
+}
+.user-listing {
+  padding: 20px;
+}
+.pagination {
+  position: relative;
+  bottom: 0;
+  left: 40%;
+}
+
+.page-item.active .page-link {
+  background-color: $pagination-color;
+  color: white;
+  border-color: $pagination-color;
+}
+.page-link {
+  color: $pagination-color;
+}
+
+// User listing end
+
+// User list item start
+.user-item-col-1 {
+  padding-top: 1rem;
+}
+.user-item {
+  border: 1px solid $border-color;
+  border-radius: 0.5rem;
+  padding: 1rem;
+  margin-bottom: 0.5rem;
+  background-color: white;
+  cursor: move;
+}
+.user-item h4,
+h6 {
+  color: #3f4347;
+}
+// User list item end
+
+// User item Modal start
+.sticky-header {
+  background-color: $black-color;
+  color: white;
+  padding: 0em 1.3em;
+}
+.sticky-header img {
+  height: 5em;
+  width: 9em;
+}
+
+.modal-user-row-1 {
+  text-align: start;
+  padding: 1rem;
+}
+.modal-user-row-2 {
+  padding: 2rem;
+}
+.modal-header {
+  background-color: $light-gray;
+}
+.modal-footer {
+  background-color: $light-gray;
+  padding: 1rem 3rem;
+}
+.modal-header-content {
+  font-weight: bold;
+  margin: 5px;
+  width: 100%;
+}
+.modal-user-name {
+  font-weight: bolder;
+  margin: 10px;
+}
+.modal-user-phone {
+  color: #08a742;
+  font-weight: 550;
+  margin: 10px;
+}
+.modal-user-separator {
+  border: 0.6px solid #bebaba8f;
+  width: 100%;
+}
+.modal-user-field {
+  font-weight: bolder;
+  text-align: end;
+  color: #827d7d;
+  @include media-breakpoint-up(xs) {
+    font-size: 10px;
+    text-align: start;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 15px;
+    text-align: end;
+  }
+}
+.modal-user-value {
+  color: #8080808c;
+  @include media-breakpoint-up(xs) {
+    font-size: 14px;
+    text-align: start;
+  }
+  @include media-breakpoint-up(md) {
+    font-size: 15px;
+    text-align: start;
+  }
+}
+.modal-back-button,
+.modal-delete-button {
+  border: 1px solid #8b8b8b63;
+  color: black;
+  font-weight: bolder;
+}
+
+.modal-delete-button {
+  color: #ff6666;
+  width: 26%;
+}
+
+// User item Modal end

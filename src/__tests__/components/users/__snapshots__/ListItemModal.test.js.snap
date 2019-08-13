@@ -1,0 +1,5 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`<ListItemModal> Tests Check rendered details Renders correctly 1`] = `null`;
+
+exports[`<ListItemModal> Tests Check rendered details renders correctly 1`] = `null`;

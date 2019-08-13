@@ -1,0 +1,15 @@
+version: '3.7'
+
+services:
+  pipe-drive-app:
+    container_name: pipe-drive-app
+    build:
+      context: .
+      dockerfile: Dockerfile
+    volumes:
+      - .:/app
+      - /app/node_modules/
+    ports:
+      - '8888:8888'
+    environment:
+      - NODE_ENV=development
