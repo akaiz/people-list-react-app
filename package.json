@@ -18,7 +18,7 @@
     "immutable": "^4.0.0-rc.12",
     "jquery": "^3.4.1",
     "loadsh": "0.0.4",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "node-sass": "4.12.0",
     "react": "^16.8.6",
     "react-avatar": "^3.6.0",
